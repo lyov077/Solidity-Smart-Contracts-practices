@@ -1,0 +1,50 @@
+{
+  "networks": {
+    "hardhat": {
+      "chainId": 31337,
+      "forking": {
+        "enabled": false,
+        "url": "https://eth-mainnet.alchemyapi.io/v2/<key>",
+        "blockNumber": 13370331
+      },
+      "accounts": {
+        "mnemonic": "hen hair couple rose hover crush math mango private apology bid antique",
+        "path": "m/44'/60'/0'/0",
+        "initialIndex": "0",
+        "count": "20"
+      },
+      "allowUnlimitedContractSize": true,
+      "initialBaseFeePerGas": 0,
+      "tags": ["Hardhat", "Fork"],
+      "deploy": ["./deploy/hardhat", "./deploy/fork"]
+    },
+    "rinkeby": {
+      "chainId": 4,
+      "gasMultiplier": 2,
+      "accounts": {
+        "mnemonic": "hen hair couple rose hover crush math mango private apology bid antique",
+        "path": "m/44'/60'/0'/0",
+        "initialIndex": "0",
+        "count": "20"
+      },
+      "url": "https://eth-rinkeby.alchemyapi.io/v2/<key>",
+      "tags": ["Rinkeby"],
+      "deploy": ["./deploy/rinkeby"]
+    },
+    "mainnet": {
+      "chainId": 1,
+      "accounts": {
+        "mnemonic": "hen hair couple rose hover crush math mango private apology bid antique",
+        "path": "m/44'/60'/0'/0",
+        "initialIndex": "0",
+        "count": "20"
+      },
+      "url": "https://eth-mainnet.alchemyapi.io/v2/<key>",
+      "tags": ["Mainnet"],
+      "deploy": ["./deploy/mainnet"]
+    }
+  },
+  "defaultConfig": {
+    "gasPrice": "auto"
+  }
+}

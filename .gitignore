@@ -1,0 +1,15 @@
+node_modules
+package-lock.json
+.env
+.vscode
+
+#Hardhat files
+coverage.json
+coverage
+deployments
+bin
+cache
+artifacts
+typechain
+docgen
+networks.js
